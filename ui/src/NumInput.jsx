@@ -18,7 +18,7 @@ export default class NumInput extends React.Component {
   }
 
   onChange(e) {
-    if (e.target.value.match(/^\d+(\.\d{1,2})?$/)) {
+    if (e.target.value.match(/^\d*(\.\d*)$/)) {
       this.setState({ value: e.target.value });
     }
   }
