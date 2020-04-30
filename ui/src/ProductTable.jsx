@@ -14,7 +14,7 @@ const ProductRow = withRouter(({
       <td>{product.pname}</td>
       <td>{`$${product.price}`}</td>
       <td>{product.category}</td>
-      <td><a href={`/#/imagedisplay/${product.imageUrl}`}>View</a></td>
+      <td><a href={`/view/${product.id}`}>View</a></td>
       <td>
         <Link to={`/edit/${product.id}`}>Edit</Link>
         {' | '}
